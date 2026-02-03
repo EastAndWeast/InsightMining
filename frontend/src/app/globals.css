@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #6366F1;
+  --color-secondary: #818CF8;
+  --color-cta: #10B981;
+  --color-background: #F5F3FF;
+  --color-text: #1E1B4B;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* 基础原子类补充 */
+@layer components {
+  .card-gradient {
+    background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+  }
+}
